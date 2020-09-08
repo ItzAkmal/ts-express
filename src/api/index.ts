@@ -1,9 +1,8 @@
 import * as express from 'express'
-import { Request, Response } from 'express'
 
 const router = express.Router()
 
-router.get('/', (req: Request, res: Response) => {
+router.get('/', (req, res) => {
 	res.json({
 		message: 'Welcome to API',
 	})
